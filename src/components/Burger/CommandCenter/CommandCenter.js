@@ -11,16 +11,29 @@ const items = [
 
 const commandCenter = props => {
   return (
-    <div className={classes.BuildControls}>
+    <div className={classes.CommandCenter}>
+      <p>
+        Total Price: <strong>${props.totalPrice.toFixed(2)}</strong>
+      </p>
       {items.map(item => {
         return (
           <IngredientItem
             key={item.label}
             label={item.label}
             type={item.type}
+            disabled={props.disabledInfo[item.type]}
+            less={() => props.removeIngredient(item.type)}
+            more={() => props.addIngredient(item.type)}
           />
         );
       })}
+      <button
+        onClick={props.purchased}
+        disabled={!props.purchaseable}
+        className={classes.OrderButton}
+      >
+        Place Order
+      </button>
     </div>
   );
 };
