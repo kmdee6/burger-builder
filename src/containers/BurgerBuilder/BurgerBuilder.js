@@ -4,28 +4,29 @@ import Burger from "../../components/Burger/Burger";
 import CommandCenter from "../../components/Burger/CommandCenter/CommandCenter";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
-import axiosOrders from '../../axios-orders';
+import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
-
-const PRICES = {
-    salad: 0.3,
-    cheese: 0.5,
-    meat: 1.2,
-    bacon: 1.3
-};
 
 class BurgerBuilder extends Component {
     constructor(props) {
         super(props);
         this.state = {
             ingredients: null,
+            prices: null,
             totalPrice: 3,
             purchasable: false,
             purchasing: false,
-            loading: false,
+            loading: true,
             error: false
         };
+    }
+
+    componentWillMount() {
+        axios.get('https://react-burger-64656.firebaseio.com/prices.json')
+            .then(response => {
+                this.setState({prices: response.data, loading: false});
+            }).catch(error => this.setState({loading: false, error: true}))
     }
 
     updatePurchaseState = updatedIngredients => {
@@ -44,7 +45,7 @@ class BurgerBuilder extends Component {
         const ingredientCount = updatedIngredients[type];
         updatedIngredients[type] = ingredientCount + 1;
         const price = this.state.totalPrice;
-        const totalPrice = price + PRICES[type];
+        const totalPrice = price + this.state.prices[type];
         this.setState({
             ingredients: updatedIngredients,
             totalPrice: totalPrice
@@ -58,7 +59,7 @@ class BurgerBuilder extends Component {
         if (ingredientCount > 0) {
             updatedIngredients[type] = ingredientCount - 1;
             const price = this.state.totalPrice;
-            const totalPrice = price - PRICES[type];
+            const totalPrice = price - this.state.prices[type];
             this.setState({
                 ingredients: updatedIngredients,
                 totalPrice: totalPrice
@@ -87,7 +88,7 @@ class BurgerBuilder extends Component {
             },
             deliveryMode: 'fastest'
         };
-        axiosOrders.post('/order.json', order)
+        axios.post('/order.json', order)
             .then(response => {
                 this.setState({loading: false, purchasing: false});
             })
@@ -97,8 +98,11 @@ class BurgerBuilder extends Component {
     };
 
     componentDidMount() {
-        axiosOrders.get('https://react-burger-64656.firebaseio.com/ingredients.json')
-            .then(response => this.setState({ingredients: response.data}))
+        axios.get('https://react-burger-64656.firebaseio.com/ingredients.json')
+            .then(response => {
+                this.setState({ingredients: response.data});
+                this.updatePurchaseState(response.data);
+            })
             .catch(error => {
                 this.setState({error: true})
             });
@@ -150,4 +154,4 @@ class BurgerBuilder extends Component {
     }
 }
 
-export default withErrorHandler(BurgerBuilder, axiosOrders);
+export default withErrorHandler(BurgerBuilder, axios);

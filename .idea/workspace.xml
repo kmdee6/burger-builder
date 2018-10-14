@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78e30734-79ae-4c18-8187-b94c370227c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,17 +27,18 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="24" />
           <entry key="html" value="1" />
-          <entry key="js" value="42" />
+          <entry key="js" value="43" />
           <entry key="json" value="1" />
           <entry key="tsx" value="1" />
         </counts>
@@ -47,7 +48,7 @@
           <entry key="CSS" value="24" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="42" />
+          <entry key="JavaScript" value="43" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -55,31 +56,22 @@
         <counts>
           <entry key="css" value="1335" />
           <entry key="html" value="25" />
-          <entry key="js" value="7072" />
-          <entry key="txt" value="68" />
+          <entry key="js" value="7458" />
+          <entry key="txt" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1335" />
           <entry key="HTML" value="25" />
-          <entry key="JavaScript" value="7072" />
-          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="JavaScript" value="7458" />
+          <entry key="PLAIN_TEXT" value="111" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,14 +139,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="99" column="83" selection-start-line="99" selection-start-column="83" selection-end-line="99" selection-end-column="83" />
+            <state relative-caret-position="151">
+              <caret line="121" column="24" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -190,6 +191,8 @@
       <find>loading:</find>
       <find>purchaseable</find>
       <find>puchasable</find>
+      <find>this.state.err</find>
+      <find>purchasable:</find>
     </findStrings>
     <replaceStrings>
       <replace>ToggleButton</replace>
@@ -216,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/components/Burger/Burger.css" />
         <option value="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/burgerIngredient.css" />
         <option value="$PROJECT_DIR$/src/components/Burger/Burger.js" />
-        <option value="$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js" />
         <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" />
         <option value="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" />
         <option value="$PROJECT_DIR$/src/components/Burger/CommandCenter/IngredientItem/IngredientItem.css" />
@@ -241,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" />
         <option value="$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js" />
         <option value="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" />
+        <option value="$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js" />
       </list>
     </option>
   </component>
@@ -273,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,6 +346,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,7 +401,8 @@
       <workItem from="1539101373452" duration="4569000" />
       <workItem from="1539190801693" duration="502000" />
       <workItem from="1539191382796" duration="801000" />
-      <workItem from="1539269342690" duration="2148000" />
+      <workItem from="1539269342690" duration="2883000" />
+      <workItem from="1539492911342" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="Final version of burger builder v1 - with mobile views and toolbars">
       <created>1538655305923</created>
@@ -407,17 +411,24 @@
       <option name="project" value="LOCAL" />
       <updated>1538655305923</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fetch ingredients from backend">
+      <created>1539271621446</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539271621446</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49385000" />
+    <option name="totallyTimeSpent" value="51224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10839392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -431,7 +442,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29956585" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34587553" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -446,7 +457,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final version of burger builder v1 - with mobile views and toolbars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version of burger builder v1 - with mobile views and toolbars" />
+    <MESSAGE value="Fetch ingredients from backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetch ingredients from backend" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -633,13 +645,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Burger/CommandCenter/IngredientItem/IngredientItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -707,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hoc/withErrorHandler/withErrorHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -724,13 +722,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="99" column="83" selection-start-line="99" selection-start-column="83" selection-end-line="99" selection-end-column="83" />
+        <state relative-caret-position="151">
+          <caret line="121" column="24" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Burger/CommandCenter/CommandCenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>

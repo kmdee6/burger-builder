@@ -29,7 +29,7 @@ const commandCenter = props => {
       })}
       <button
         onClick={props.purchased}
-        disabled={!props.purchaseable}
+        disabled={!props.purchasable}
         className={classes.OrderButton}
       >
         Place Order
