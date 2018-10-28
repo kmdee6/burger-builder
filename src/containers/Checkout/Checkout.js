@@ -40,7 +40,6 @@ class Checkout extends Component {
     };
 
     render() {
-        console.log('Checkout.js [props] ', this.props);
         return (
             <div>
                 <CheckoutSummary
