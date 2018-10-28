@@ -28,9 +28,9 @@ class OrderSummary extends Component {
                 <Button buttonType="Danger" clicked={this.props.cancelBtn}>
                     CANCEL
                 </Button>
-                <Button buttonType="Success" clicked={this.props.continueBtn}>
-                    CONTINUE
-                </Button>
+                    <Button buttonType="Success" clicked={this.props.continueBtn}>
+                        CONTINUE
+                    </Button>
             </Wrap>
         );
     }

@@ -24,12 +24,13 @@ class Layout extends Component {
     };
 
     render() {
-        return (<Wrap>
-            <Toolbar clickToggle={this.toggleSideDrawerHandler}/>
-            <SideDrawer showDrawer={this.state.showSideDrawer} closeDrawer={this.collapseSideDrawerHandler}/>
-            <div>Backdrop</div>
-            <main className={classes.Layout}>{this.props.children}</main>
-        </Wrap>);
+        return (
+            <Wrap>
+                <Toolbar clickToggle={this.toggleSideDrawerHandler}/>
+                <SideDrawer showDrawer={this.state.showSideDrawer} closeDrawer={this.collapseSideDrawerHandler}/>
+                <div>Backdrop</div>
+                <main className={classes.Layout}>{this.props.children}</main>
+            </Wrap>);
     }
 }
 
