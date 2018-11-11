@@ -28,7 +28,7 @@ const commandCenter = props => {
         );
       })}
       <button
-        onClick={props.purchased}
+        onClick={props.purchase}
         disabled={!props.purchasable}
         className={classes.OrderButton}
       >
